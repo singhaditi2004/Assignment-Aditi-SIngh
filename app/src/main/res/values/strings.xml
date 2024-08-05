@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">assignmet_Aditi_Singh</string>
+    <string name="view_products">View Products</string>
+    <string name="product_list">Product List</string>
+    <string name="title">Title</string>
+    <string name="loreum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere erat libero, sed tincidunt erat rhoncus vel. Quisque imperdiet .</string>
+    <string name="rating">Rating</string>
+    <string name="category">Category</string>
+    <string name="price">Price</string>
+    <string name="stock">Stock</string>
+    <string name="tags">Tags</string>
+    <string name="brand">Brand</string>
+</resources>
