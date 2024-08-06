@@ -10,4 +10,26 @@
     <string name="stock">Stock</string>
     <string name="tags">Tags</string>
     <string name="brand">Brand</string>
+    <string name="tag">Tag</string>
+    <string name="cat">cat</string>
+    <string name="sku">Sku</string>
+    <string name="weight">Weight</string>
+    <string name="dimensions">Dimensions</string>
+    <string name="width">Width</string>
+    <string name="_123">123</string>
+    <string name="depth">Depth</string>
+    <string name="_234">234</string>
+    <string name="warranty_information">Warranty Information</string>
+    <string name="shipping_information">Shipping Information</string>
+    <string name="availability_status">Availability Status</string>
+    <string name="return_policy">Return Policy</string>
+    <string name="minimum_order_quantity">Minimum Order Quantity</string>
+    <string name="meta">Meta</string>
+    <string name="updated_at">Updated At</string>
+    <string name="bar_code">Bar Code</string>
+    <string name="qr_code">QR Code</string>
+    <string name="reviewer_name">Reviewer Name</string>
+    <string name="reviewer_email">Reviewer Email</string>
+    <string name="reviewer_comment">Reviewer Comment</string>
+    <string name="review_date">Review Date</string>
 </resources>

@@ -18,15 +18,23 @@
             android:layout_height="match_parent"
             android:layout_marginBottom="@dimen/_12sdp"
             android:orientation="vertical">
-
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:padding="@dimen/_150sdp"
+                android:background="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="@dimen/_150sdp"
-                android:layout_height="@dimen/_150sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/_17sdp"
                 android:src="@mipmap/ic_launcher" />
-
+            </androidx.cardview.widget.CardView>
             <TextView
                 android:id="@+id/titleTextView"
                 android:layout_width="wrap_content"
@@ -46,7 +54,7 @@
                 android:layout_marginBottom="@dimen/_12sdp"
                 android:text="@string/loreum"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_9sdp" />
+                android:textSize="@dimen/_13sdp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -90,7 +98,7 @@
                     android:fontFamily="@font/allerta"
                     android:text="@string/rating"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp"
+                    android:textSize="@dimen/_13sdp"
 
                     />
 
@@ -103,7 +111,7 @@
                     android:fontFamily="@font/allerta"
                     android:text="@string/rating"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp"
+                    android:textSize="@dimen/_13sdp"
 
                     />
 
@@ -115,7 +123,7 @@
                     android:fontFamily="@font/allerta"
                     android:text="@string/category"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp"
+                    android:textSize="@dimen/_13sdp"
 
                     />
 
@@ -128,7 +136,7 @@
                     android:fontFamily="@font/allerta"
                     android:text="cat"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp" />
+                    android:textSize="@dimen/_13sdp" />
             </LinearLayout>
 
             <LinearLayout
@@ -143,7 +151,7 @@
                     android:fontFamily="@font/allerta"
                     android:text="@string/stock"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp" />
+                    android:textSize="@dimen/_14sdp" />
 
                 <TextView
                     android:id="@+id/stock"
@@ -154,7 +162,7 @@
                     android:fontFamily="@font/allerta"
                     android:text="cat"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp" />
+                    android:textSize="@dimen/_13sdp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -164,12 +172,13 @@
                     android:fontFamily="@font/allerta"
                     android:text="@string/tags"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp" />
+                    android:textSize="@dimen/_14sdp" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/tagRecycle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
                     android:orientation="horizontal" />
 
             </LinearLayout>
@@ -186,7 +195,7 @@
                     android:fontFamily="@font/allerta"
                     android:text="@string/brand"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp" />
+                    android:textSize="@dimen/_14sdp" />
 
                 <TextView
                     android:id="@+id/brand"
@@ -195,240 +204,220 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:fontFamily="@font/allerta"
-                    android:text="cat"
+                    android:text="@string/cat"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp" />
+                    android:textSize="@dimen/_14sdp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_13sdp"
                     android:fontFamily="@font/allerta"
-                    android:text="sku"
+                    android:text="@string/sku"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp" />
+                    android:textSize="@dimen/_14sdp" />
 
                 <TextView
                     android:id="@+id/sku"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_13sdp"
                     android:fontFamily="@font/allerta"
-                    android:text="sku"
+                    android:text="@string/sku"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp" />
+                    android:textSize="@dimen/_14sdp"/>
 
-                <TextView
 
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:fontFamily="@font/allerta"
-                    android:text="Weight"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp" />
-
-                <TextView
-                    android:id="@+id/weight"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:fontFamily="@font/allerta"
-                    android:text="2"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp" />
             </LinearLayout>
+            <TextView
 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:fontFamily="@font/allerta"
+                android:text="@string/weight"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:fontFamily="@font/allerta"
+                android:text="123"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:fontFamily="@font/allerta"
+                android:text="@string/dimensions"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_7sdp"
 
+                android:layout_marginStart="@dimen/_15sdp"
                 >
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:fontFamily="@font/allerta"
-                    android:text="Dimensions"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="@dimen/_2sdp"
                     android:layout_marginTop="@dimen/_12sdp"
                     android:fontFamily="@font/allerta"
-                    android:text="Width"
+                    android:text="@string/width"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
+                    android:textSize="@dimen/_14sdp" />
 
                 <TextView
                     android:id="@+id/width"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginTop="@dimen/_12sdp"
                     android:fontFamily="@font/allerta"
                     android:text="123"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
+                    android:textSize="@dimen/_14sdp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginTop="@dimen/_12sdp"
                     android:fontFamily="@font/allerta"
                     android:text="Height"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
+                    android:textSize="@dimen/_14sdp"  />
+
+                <TextView
+                    android:id="@+id/height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:fontFamily="@font/allerta"
+                    android:text="@string/_123"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"  />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginTop="@dimen/_12sdp"
                     android:fontFamily="@font/allerta"
-                    android:text="123"
+                    android:text="@string/depth"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginTop="@dimen/_12sdp"
-                    android:fontFamily="@font/allerta"
-                    android:text="Depth"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
+                    android:textSize="@dimen/_14sdp"  />
 
                 <TextView
                     android:id="@+id/depth"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginTop="@dimen/_12sdp"
                     android:fontFamily="@font/allerta"
-                    android:text="234"
+                    android:text="@string/_234"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:fontFamily="@font/allerta"
-                    android:text="Warranty Information"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp" />
-
-                <TextView
-                    android:id="@+id/warrantyInfo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="@dimen/_12sdp"
-                    android:fontFamily="@font/allerta"
-                    android:text="warrantyInfo"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginTop="@dimen/_12sdp"
-                    android:fontFamily="@font/allerta"
-                    android:text="Shipping Information"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
-
-                <TextView
-                    android:id="@+id/shippingInfo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginTop="@dimen/_12sdp"
-                    android:fontFamily="@font/allerta"
-                    android:text="Information"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginTop="@dimen/_12sdp"
-                    android:fontFamily="@font/allerta"
-                    android:text="Availability Status"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
-
-                <TextView
-                    android:id="@+id/availabilityStatus"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginTop="@dimen/_12sdp"
-                    android:fontFamily="@font/allerta"
-                    android:text="availabilityStatus"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
+                    android:textSize="@dimen/_14sdp"
+                    />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-
-                >
+                android:layout_marginStart="@dimen/_15sdp">
 
                 <TextView
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/allerta"
+                    android:text="@string/warranty_information"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:id="@+id/warrantyInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:fontFamily="@font/allerta"
+                    android:text="@string/warranty_information"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:fontFamily="@font/allerta"
+                    android:text="@string/shipping_information"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"  />
+
+                <TextView
+                    android:id="@+id/shippingInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginTop="@dimen/_12sdp"
-                    android:layout_marginBottom="@dimen/_12sdp"
                     android:fontFamily="@font/allerta"
-                    android:text="Ratings"
+                    android:text="@string/shipping_information"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp" />
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:fontFamily="@font/allerta"
+                    android:text="@string/availability_status"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"  />
+
+                <TextView
+                    android:id="@+id/availabilityStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:fontFamily="@font/allerta"
+                    android:text="availabilityStatus"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp"  />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:fontFamily="@font/allerta"
+                android:text="Ratings"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/ratingRecycle"
@@ -443,22 +432,21 @@
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginTop="@dimen/_12sdp"
                     android:fontFamily="@font/allerta"
-                    android:text="Return Policy"
+                    android:text="@string/return_policy"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp" />
+                    android:textSize="@dimen/_14sdp" />
 
                 <TextView
                     android:id="@+id/returnPolicy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginTop="@dimen/_8sdp"
                     android:layout_marginBottom="@dimen/_12sdp"
                     android:fontFamily="@font/allerta"
-                    android:text="Return Policy"
+                    android:text="@string/return_policy"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
+                    android:textSize="@dimen/_14sdp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -467,35 +455,31 @@
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginTop="@dimen/_12sdp"
                     android:fontFamily="@font/allerta"
-                    android:text="Minimum Order Quantity"
+                    android:text="@string/minimum_order_quantity"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp" />
+                    android:textSize="@dimen/_14sdp" />
 
                 <TextView
                     android:id="@+id/minumOrd"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginTop="@dimen/_8sdp"
-                    android:layout_marginBottom="@dimen/_12sdp"
                     android:fontFamily="@font/allerta"
-                    android:text="Return Policy"
+                    android:text="4"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
-            </LinearLayout>
+                    android:textSize="@dimen/_14sdp" />
 
             <TextView
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
                 android:layout_marginStart="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_12sdp"
                 android:fontFamily="@font/allerta"
-                android:text="Meta"
+                android:text="@string/meta"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_12sdp" />
+                android:textSize="@dimen/_14sdp" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -510,7 +494,7 @@
                     android:fontFamily="@font/allerta"
                     android:text="Created At"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
+                    android:textSize="@dimen/_13sdp" />
 
                 <TextView
                     android:id="@+id/createdAt"
@@ -519,9 +503,9 @@
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginTop="@dimen/_9sdp"
                     android:fontFamily="@font/allerta"
-                    android:text="Return Policy"
+                    android:text="@string/_234"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
+                    android:textSize="@dimen/_13sdp" />
 
             </LinearLayout>
 
@@ -536,20 +520,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/allerta"
-                    android:text="Updated At"
+                    android:text="@string/updated_at"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp" />
+                    android:textSize="@dimen/_14sdp" />
 
                 <TextView
                     android:id="@+id/updatedAt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:fontFamily="@font/allerta"
                     android:text="Updated At"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
+                    android:textSize="@dimen/_13sdp" />
             </LinearLayout>
 
             <LinearLayout
@@ -563,40 +546,38 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/allerta"
-                    android:text="Bar Code"
+                    android:text="@string/bar_code"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_12sdp" />
+                    android:textSize="@dimen/_14sdp" />
 
                 <TextView
                     android:id="@+id/barCode"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:fontFamily="@font/allerta"
-                    android:text="barcode"
+                    android:text="@string/bar_code"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
+                    android:textSize="@dimen/_13sdp" />
             </LinearLayout>
 
             <TextView
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
                 android:layout_marginStart="@dimen/_15sdp"
                 android:layout_marginBottom="@dimen/_7sdp"
                 android:fontFamily="@font/allerta"
-                android:text="QR Code"
+                android:text="@string/qr_code"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_12sdp" />
+                android:textSize="@dimen/_15sdp" />
 
             <ImageView
                 android:id="@+id/qrcode"
                 android:layout_width="@dimen/_150sdp"
                 android:layout_height="@dimen/_150sdp"
                 android:layout_marginStart="@dimen/_15sdp"
-                android:src="@drawable/ic_launcher_bacLkground" />
+                android:src="@drawable/ic_launcher_background" />
         </LinearLayout>
 
     </ScrollView>
